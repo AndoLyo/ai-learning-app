@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Learning Assistant
 
-## Getting Started
+AIを活用した学習支援アプリケーションです。プログラミングの質問、技術概念の説明、アイデア出しなど、様々な学習シーンで活用できます。
 
-First, run the development server:
+## 🚀 機能
 
+- **🤖 AIチャット**: OpenAI GPT-3.5-turboを使用した対話型学習
+- **💬 会話履歴**: チャットの履歴を保存・表示
+- **📱 レスポンシブ**: モバイル・デスクトップ対応
+- **🎨 モダンUI**: Tailwind CSSによる美しいデザイン
+
+## 🛠️ 技術スタック
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS
+- **AI**: OpenAI API (GPT-3.5-turbo)
+- **Deployment**: Vercel (推奨)
+
+## 📦 セットアップ
+
+### 1. リポジトリのクローン
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/ai-learning-app.git
+cd ai-learning-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. 依存関係のインストール
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. 環境変数の設定
+`.env`ファイルを作成し、OpenAI APIキーを設定：
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. 開発サーバーの起動
+```bash
+npm run dev
+```
 
-## Learn More
+ブラウザで [http://localhost:3000](http://localhost:3000) にアクセス
 
-To learn more about Next.js, take a look at the following resources:
+## 🔑 APIキーの取得
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. [OpenAI Platform](https://platform.openai.com/api-keys) にアクセス
+2. アカウントを作成・ログイン
+3. **Create new secret key** をクリック
+4. 生成されたキーを`.env`ファイルに設定
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 デプロイ
 
-## Deploy on Vercel
+### Vercelでのデプロイ
+1. [Vercel](https://vercel.com) にアクセス
+2. GitHubアカウントでログイン
+3. **New Project** をクリック
+4. `ai-learning-app`リポジトリを選択
+5. 環境変数`OPENAI_API_KEY`を設定
+6. **Deploy** をクリック
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 使用方法
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. アプリケーションにアクセス
+2. 質問や相談を入力
+3. **送信**ボタンをクリック
+4. AIからの回答を確認
+
+### 質問例
+- 「JavaScriptの配列操作を教えて」
+- 「Next.jsの使い方を説明して」
+- 「Webアプリのアイデアを出して」
+- 「Pythonでデータ分析を始めるには？」
+
+## 🤝 コントリビューション
+
+1. このリポジトリをフォーク
+2. フィーチャーブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m 'Add amazing feature'`)
+4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
+5. プルリクエストを作成
+
+## 📄 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
+
+## 🆘 サポート
+
+問題が発生した場合：
+1. [Issues](https://github.com/yourusername/ai-learning-app/issues) で報告
+2. または、`.chat/team-chat.md`に記録
+
+---
+
+**Happy Learning! 🎓**
